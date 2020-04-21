@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'Product Sans'
       ),
-      home: MyHomePage(title: 'My first web app'),
+      home: MyHomePage(title: 'My first Web App in Flutter'),
     
     );
   }
