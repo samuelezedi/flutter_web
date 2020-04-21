@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 class Navbar extends StatelessWidget {
 
@@ -83,25 +82,18 @@ class MobileNavbar extends StatelessWidget {
               fontSize: 30
             ),
             ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-            Text("Home", style: TextStyle(color: Colors.white),),
-            SizedBox(width: 30,),
-            Text("About Us",style: TextStyle(color: Colors.white),),
-            SizedBox(width: 30,),
-            Text("Portfolio", style: TextStyle(color: Colors.white),),
-            SizedBox(width: 30,),
-            MaterialButton(
-              onPressed: (){
-                print('hello Samuel');
-              },
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              child: Text('Join',style: TextStyle(color: Colors.white)),
-              padding: EdgeInsets.all(10),
-              color: Colors.pink,)
-            
-          ],)
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+              Text("Home", style: TextStyle(color: Colors.white),),
+              SizedBox(width: 30,),
+              Text("About Us",style: TextStyle(color: Colors.white),),
+              SizedBox(width: 30,),
+              Text("Portfolio", style: TextStyle(color: Colors.white),),
+            ],),
+          )
         ],)
       ),
     );

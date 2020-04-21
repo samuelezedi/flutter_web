@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webapp/LandingPage/landingPage.dart';
 import 'package:webapp/NavBar/navbar.dart';
 
 void main() {
@@ -15,8 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Product Sans'
       ),
       home: MyHomePage(title: 'My first web app'),
+    
     );
   }
 }
@@ -45,11 +48,14 @@ class _MyHomePageState extends State<MyHomePage> {
               colors: [Color.fromRGBO(195, 20, 60,1.0), Color.fromRGBO(36,11,54,1.0)]
             ),
           ),
-          child: Column(
-            children: <Widget>[
-             Navbar()
-            ],
-            ),
+          child: SingleChildScrollView(
+                      child: Column(
+              children: <Widget>[
+               Navbar(),
+               LandingPage()
+              ],
+              ),
+          ),
           ),
     );
      
