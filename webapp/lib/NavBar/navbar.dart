@@ -13,10 +13,10 @@ Widget build (BuildContext context) {
         return DesktopNavbar();
       } else if(constraints.maxWidth > 800 && constraints.maxWidth < 1200){
         //tablets
-        return DesktopNavbar();
+        return TabletsNavbar();
       } else {
         //mobile views
-        return DesktopNavbar();
+        return MobileNavbar();
       }
     },
   );
@@ -26,45 +26,127 @@ Widget build (BuildContext context) {
 class DesktopNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: BoxConstraints(maxWidth: 1200),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-        Text(
-          'Samuel Ezedi',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-            fontSize: 30
-          ),
-          ),
-        Row(
+    return Padding(
+      padding: const EdgeInsets.all(15),
+      child: Container(
+        // constraints: BoxConstraints(maxWidth: 1200),
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-          Text("Home", style: TextStyle(color: Colors.white),),
-          SizedBox(width: 10,),
-          Text("About Us", style: TextStyle(color: Colors.white),),
-          SizedBox(width: 10,),
-          Text("Portfolio", style: TextStyle(color: Colors.white),),
-          SizedBox(width: 10,),
-          InkWell(
-              onTap: () {
-                print('hello samuel');
+          Text(
+            'Samuel Ezedi',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 30
+            ),
+            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+            Text("Home", style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            Text("About Us",style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            Text("Portfolio", style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            MaterialButton(
+              onPressed: (){
+                print('hello Samuel');
               },
-              child: Container(
-              height: 30,
-              padding: EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5),
-                color: Colors.white,
-              ),
-              child: Text(
-                "Join", style: TextStyle(color: Colors.black),)),
-          ),
-          SizedBox(width: 10,),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              child: Text('Join',style: TextStyle(color: Colors.white)),
+              padding: EdgeInsets.all(10),
+              color: Colors.pink,)
+            
+          ],)
         ],)
-      ],)
+      ),
+    );
+  }
+}
+
+class MobileNavbar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(15),
+      child: Container(
+        // constraints: BoxConstraints(maxWidth: 1200),
+        child: Column(
+          children: <Widget>[
+          Text(
+            'Samuel Ezedi',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 30
+            ),
+            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+            Text("Home", style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            Text("About Us",style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            Text("Portfolio", style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            MaterialButton(
+              onPressed: (){
+                print('hello Samuel');
+              },
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              child: Text('Join',style: TextStyle(color: Colors.white)),
+              padding: EdgeInsets.all(10),
+              color: Colors.pink,)
+            
+          ],)
+        ],)
+      ),
+    );
+  }
+}
+
+class TabletsNavbar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(15),
+      child: Container(
+        // constraints: BoxConstraints(maxWidth: 1200),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+          Text(
+            'Samuel Ezedi',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 30
+            ),
+            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+            Text("Home", style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            Text("About Us",style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            Text("Portfolio", style: TextStyle(color: Colors.white),),
+            SizedBox(width: 30,),
+            MaterialButton(
+              onPressed: (){
+                print('hello Samuel');
+              },
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+              child: Text('Join',style: TextStyle(color: Colors.white)),
+              padding: EdgeInsets.all(10),
+              color: Colors.pink,)
+            
+          ],)
+        ],)
+      ),
     );
   }
 }
