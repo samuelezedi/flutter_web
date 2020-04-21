@@ -11,8 +11,8 @@ You can check out the tutorial here:
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
 # app images
-![alt text](https://ibb.co/C2gjsYf)
+![Mobile](https://raw.githubusercontent.com/samuelezedi/flutter_web/master/assets/images/2.png)
 Mobile View
 
-![alt text](https://ibb.co/1nmJDrM)
+![Web](https://raw.githubusercontent.com/samuelezedi/flutter_web/master/assets/images/1.png)
 Web View
