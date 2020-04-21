@@ -1,16 +1,19 @@
 # webapp
 
-A new Flutter project.
+This is my first flutter web app, I have a simple landing page with a nav bar.
 
-## Getting Started
+Thanks to RetroPortal Youtube Tutorial, this was just a hands on
+and it came out just fine.
 
-This project is a starting point for a Flutter application.
+You can check out the tutorial here:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [ReTroPoral Flutter Web App Tutorial on youtube here](https://www.youtube.com/watch?v=rpkKYQCioW0&t=133s)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# app images
+![alt text](https://ibb.co/C2gjsYf)
+Mobile View
+
+# app images
+![alt text](https://ibb.co/1nmJDrM)
+Web View
