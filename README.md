@@ -14,6 +14,5 @@ You can check out the tutorial here:
 ![alt text](https://ibb.co/C2gjsYf)
 Mobile View
 
-# app images
 ![alt text](https://ibb.co/1nmJDrM)
 Web View
